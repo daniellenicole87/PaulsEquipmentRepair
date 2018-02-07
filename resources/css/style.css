@@ -1,0 +1,379 @@
+/* Universal Styles */
+
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 18px;
+}
+
+body {
+  line-height: 1.4;
+}
+
+.container {
+  max-width: 1060px;
+  margin: auto;
+}
+
+
+/* Header */
+
+header {
+  background-color: #e6e7e8;
+}
+
+header span{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  color: #215dcb;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 3rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+nav ul {
+  margin-right: 1rem;
+}
+
+nav li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+nav li a{
+  text-decoration: none;
+  color: #215dcb;
+}
+
+.truncated-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  header span{
+    display: none;
+  }
+}
+
+/* Main Banner */
+
+.main-banner {
+  background-image: url("../images/gardenMower.jpg");
+  height: 18rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 9rem;
+}
+
+.flex-container {
+  float: right;
+  margin-right: 2rem;
+  background-color: white;
+  width: 20rem;
+  height: 10rem;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+.flex-container h1 {
+  font-size: 2rem;
+  color: #215dcb;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1rem;
+  opacity: 1;
+}
+
+.flex-container h2 {
+  font-size: 1.5rem;
+  color: #215dcb;
+  text-align: center;
+}
+
+button {
+  font-size: 1rem;
+  background-color: #215dcb;
+  width: 9rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  margin-left: 5.5rem;
+  border-radius: 5px;
+}
+
+button a{
+  color: white;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 480px) {
+  .main-banner {
+    height: 12rem;
+    padding-top: 6rem;
+  }
+
+  .flex-container{
+    width: 100%;
+    float: none;
+    border-radius: 0;
+  }
+
+  button {
+    margin-left: 8.5rem;
+  }
+
+  .flex-container h1 {
+    padding-top: 1rem;
+  }
+}
+
+
+
+/* About Section */
+
+.about h3{
+  font-size: 1.25rem;
+  color: #215dcb;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-left: 38px;
+  margin-bottom: 1rem;
+}
+
+.aboutInfo {
+  display: flex;
+}
+
+.aboutInfo img{
+  margin-left: 38px;
+  width: 473px;
+  border-radius: 10px;
+}
+
+.aboutInfo p{
+  margin-left: 38px;
+  margin-right:38px;
+  font-size: 17px;
+}
+
+.about p span{
+  font-weight: bold;
+}
+
+.about p span a{
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutInfo img{
+    margin-left: 38px;
+    width: 692px;
+    border-radius: 10px;
+  }
+
+  .aboutInfo {
+    display: block;
+  }
+
+  .aboutInfo p{
+    margin-left: 38px;
+    margin-right:38px;
+    margin-top: 1rem;
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .aboutInfo img{
+    margin-left: 38px;
+    width: 404px;
+    border-radius: 10px;
+  }
+
+  .aboutInfo {
+    display: block;
+  }
+
+  .aboutInfo p{
+    margin-left: 38px;
+    margin-right:38px;
+    margin-top: 1rem;
+    font-size: 17px;
+  }
+
+  .about h3{
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+
+
+/* Services Section */
+
+.services h3{
+  font-size: 1.25rem;
+  color: #215dcb;
+  font-weight: bold;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  margin-left: 38px;
+  margin-bottom: 1rem;
+}
+
+.services h4{
+  font-size: 1.25rem;
+  color: #215dcb;
+  text-align:center;
+  padding-top:0.5rem;
+  padding-bottom: 1.0rem;
+}
+
+.services{
+  background-color: #e6e7e8;
+}
+
+.servicesInfo {
+  display: flex;
+}
+
+.servicesInfo img{
+  margin-left: 38px;
+  width: 473px;
+  border-radius: 10px;
+}
+
+.services h5{
+  font-size: 1.0rem;
+  color: black;
+  text-align:center;
+  padding-top:0.5rem;
+  padding-bottom: 1.0rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .servicesInfo img{
+    margin-left: 38px;
+    width: 325px;
+    border-radius: 10px;
+  }
+
+  .services h5{
+    text-align:center;
+    margin-right: 38px;
+    margin-left: 38px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .servicesInfo img{
+    margin-left: 38px;
+    width: 404px;
+    border-radius: 10px;
+  }
+
+  .servicesInfo {
+    display: block;
+  }
+}
+
+
+
+/* Contact Section */
+
+.contact h3{
+  font-size: 1.25rem;
+  color: #215dcb;
+  font-weight: bold;
+  margin-top: 2.0rem;
+  margin-left: 38px;
+  margin-bottom: 1rem;
+}
+
+.contactInfo {
+  display: flex;
+}
+
+.contactInfo p {
+  margin-left: 38px;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.location {
+  margin-left: 4rem;
+}
+
+.contactInfo p span{
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .location {
+    margin-left: 2.0rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contactInfo {
+    display: block;
+  }
+
+  .location {
+    margin-left: 0rem;
+    margin-bottom: 2rem;
+  }
+
+  .contactInfo p {
+    font-size: 0.90rem;
+    margin-bottom: 1rem;
+  }
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #e6e7e8;
+}
+
+footer span{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  color: #215dcb;
+}
+
+footer .container div {
+  display: flex;
+  align-items: center;
+}
+
+footer .container img {
+  height: 3rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
